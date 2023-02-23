@@ -10,6 +10,6 @@ jobs:
           distribution: temurin
           java-version: 11
       - name: Execute Gradle build
-        run: ./gradlew :lib:compileKotlin
+        run: ./gradlew :lib:compileKotlin -Dfile.encoding=UTF-8
         env:
           GRADLE_ENTERPRISE_ACCESS_KEY: ${{ secrets.GRADLE_ENTERPRISE_ACCESS_KEY }}
