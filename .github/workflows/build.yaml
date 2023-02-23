@@ -13,4 +13,3 @@ jobs:
         run: ./gradlew :lib:compileKotlin
         env:
           GRADLE_ENTERPRISE_ACCESS_KEY: ${{ secrets.GRADLE_ENTERPRISE_ACCESS_KEY }}
-
