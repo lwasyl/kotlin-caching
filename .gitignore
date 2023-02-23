@@ -1,0 +1,29 @@
+*.iml
+.gradle
+/local.properties
+.idea/*
+!.idea/codeStyles/
+!.idea/fileTemplates/
+.idea/codeStyles/codeStyleConfig.xml
+**/.DS_Store
+build/
+!**/src/**/build
+/captures
+.externalNativeBuild
+upload.log
+.kotlintest
+
+# fastlane specific
+**/fastlane/report.xml
+**/fastlane/Preview.html
+**/fastlane/screenshots
+**/fastlane/test_output
+
+# Ruby
+## Environment normalization:
+/.bundle/
+/vendor/bundle
+/lib/bundler/man/
+
+# Visual Studio Code
+.project
