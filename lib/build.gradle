@@ -6,6 +6,24 @@ repositories {
     mavenCentral()
 }
 
+kotlin {
+    jvmToolchain {
+        vendor.set(JvmVendorSpec.ADOPTIUM)
+        languageVersion.set(JavaLanguageVersion.of(17))
+    }
+}
+
+tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
+    kotlinOptions {
+        jvmTarget = 11
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    sourceCompatibility = 11
+    targetCompatibility = 11
+}
+
 dependencies {
     api 'org.apache.commons:commons-math3:3.6.1'
     implementation 'com.google.guava:guava:31.1-jre'
